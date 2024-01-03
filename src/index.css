@@ -1,13 +1,103 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+/* * header */
+header {
+  background-color: #8c54ff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.log{
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  padding: 0 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.log:hover{
+  color:lime;
+}
+/* *book managemet links */
+
+.bookLinks {
+  display: flex;
+  background-color: #8c52ff;
+  /* border: 2px solid red */
+}
+.bookLinks .mylinks{
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+.bookLinks .mylinks:hover{
+  color: #1d1d1d;
+  font-weight: bold;
+  background-color: rgba(96, 35, 146, 0.333);
+  
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+ border: 1px solid red;
+ margin-left: 20px;
+}
+.dropdownHeader{
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  flex-direction: column;
+
+}
+.dropdown:hover .dropdown-content{
+  display: flex;
+  background-color: #8c52ff;
+ 
+}
+.UserManagement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgProfile {
+  width: 50px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.imgProfile img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid rgb(150, 118, 118);
+}
+
+/** footer section */
+footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: bolder;
 }

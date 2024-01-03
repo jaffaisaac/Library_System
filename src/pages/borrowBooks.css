@@ -1,0 +1,37 @@
+*{
+    /* border: 1px solid red; */
+}
+.borrrowedDetile{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.borrrowedDetile .bookInfor{
+    width: 50%;
+}
+
+.borrrowedDetile .userInfor{
+    width: 40%;
+    border-radius: 0px;
+
+}
+
+.userInfor select{
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 15px 0;
+
+}
+.bookInfor .bookLog{
+    width: 150px;
+}
+.bookLog img{
+    width: 100%;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+
+}

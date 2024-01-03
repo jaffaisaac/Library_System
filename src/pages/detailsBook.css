@@ -1,0 +1,45 @@
+*{
+    /* border: 1px solid red; */
+}
+.AllBookInfor{
+    width: 800px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+.imgDescriptionsection{
+    display: flex;
+}
+.imageArea{
+    width: 350px;
+}
+.imageArea img{
+    width: 100%;
+}
+.DescriptionSection{
+    padding: 20px;
+}
+.BkDetailBtnsection{
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+}
+.Textstyle{
+    font-weight: bold;
+}
+.btn-Gruoup{
+    display: flex;
+}
+.btn-Gruoup button{
+    width: 200px;
+    margin: 10px;
+
+}
+.dangerBtn{
+    background-color: rgba(199, 37, 37, 0.959);
+}
+.dangerBtn:hover{
+    background-color: red;
+    color: black;
+}

@@ -1,0 +1,24 @@
+*{
+    /* border: 1px solid red; */
+}
+.tableDetils{
+    width: 100%;
+}
+table{
+    margin: auto;
+    padding: 10px;
+}
+th , hd{
+    padding: 5px 40px;
+  
+}
+tr{
+    text-align: center;
+}
+th{
+    background-color: rgba(43, 128, 226, 0.767);
+    color: #fff;
+}
+tr:hover{
+    background-color: #ccc;
+}

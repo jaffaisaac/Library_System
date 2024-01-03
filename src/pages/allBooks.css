@@ -1,0 +1,34 @@
+*{
+    /* border: 1px solid red; */
+}
+.Gallaybookcards{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.bookCard{
+    width: 150px;
+    margin: 5px;
+    padding:5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    
+}
+.bookCard:hover{
+    background-color: #ccc;
+    transform: scale(1.04);
+}
+
+.cardDetils,.imgcardSection{
+    width: auto;
+}
+.imgcardSection img{
+    width: 100%;
+    height: 25vh;
+}
+.cardDetils p{
+    /* border: 3px solid limegreen; */
+    margin: 0px;
+
+}
