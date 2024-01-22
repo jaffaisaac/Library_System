@@ -13,7 +13,7 @@ export const Teachers = () => {
       const allTeacher =[];
       (await getDocs(OnlyTeacher)).forEach(
         documents=>{
-          console.log(documents.data())
+         // console.log(documents.data())
          const TeacherObject={
           ID :documents.data().new_id,
           Fname:documents.data().new_firstName,
@@ -26,6 +26,7 @@ export const Teachers = () => {
         }
         )
         setAllTeacher(allTeacher);
+      
     } catch (error) {
       console.log("Failed to  Load Data",error)
     }

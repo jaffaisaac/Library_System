@@ -12,7 +12,7 @@ import { Home } from "../pages/Home";
 import {Routes,Route} from 'react-router-dom';
 import { DetailsBook } from "../pages/DetailsBook";
 import { TeacherRegistor } from "../pages/TeacherRegistor";
-export const Allroutes = () => {
+export const Allroutes = ({onlogin}) => {
   return (
     <>
         <Routes>
@@ -30,7 +30,7 @@ export const Allroutes = () => {
             <Route path="returedbooks" element={<ReturnBooks/>}/>
                 {/* no how to manage login /register and logOyut */}
             <Route path="register" element={<RegistorPage/>}/>
-            <Route path="login" element={<Loginpage/>}/>
+            <Route path="login" element={<Loginpage onlogin={onlogin}/>}/>
 
 
             {/* special links not on NavBar */}

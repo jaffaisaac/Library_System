@@ -9,7 +9,7 @@ export const Students = () => {
   const [studentData, setStudentData] = useState([]);
 
   const fetchData= async()=>{
-       // Initialize Firebase
+       //* Initialize Firebase
        const firebaseApp =initializeApp(myfireBaseConfig);
        const db = getFirestore(firebaseApp);
        const collRef =collection(db,"Student_Registor");

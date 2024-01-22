@@ -16,7 +16,7 @@ export const RegistorPage = () => {
   // * this is used in navigation
 const navigate = useNavigate();
   // * this for the image tag
-const [selectedImage,setSelectedImage]=useState(null)
+const [selectedImage,setSelectedImage]=useState(null);
 const handleImageChange=(event)=>{
   const file =event.target.files[0];
   if(file){
@@ -80,7 +80,7 @@ const formSubmit =(e)=>{
       email:'',
       courseOption:'',
       password:'',
-      UserType:'Student'
+      UserType:'student'
     })
    formRef.current.reset();
     setSelectedImage(null);

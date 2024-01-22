@@ -10,6 +10,7 @@ export const BookShef = () => {
       <div className="bookSearch">
           <div >
             <select className="optionSelect">
+              <option >Locate Book From Sheif No.</option>
               <option value="">BookShelf 1</option>
               <option value="">BookShelf 2</option>
               <option value="">BookShelf 3</option>
@@ -19,7 +20,6 @@ export const BookShef = () => {
               <option value="">BookShelf 7</option>
               <option value="">BookShelf 8</option>
               <option value="">BookShelf 9</option>
-              <option value="">BookShelf 10</option>
             </select>
           </div>
 

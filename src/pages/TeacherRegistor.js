@@ -45,7 +45,7 @@ const handleSubmitForm = async (event) => {
       new_gender: TrFormData.Gender,
       new_email: TrFormData.Email,
       new_password: TrFormData.password,
-      new_UserType: "Teacher",
+      new_UserType: "teacher",
     });
 
     console.log("Teacher added successfully");

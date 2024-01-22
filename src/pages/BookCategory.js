@@ -9,6 +9,7 @@ export const BookCategory = () => {
       <div className="bookSearch">
           <div >
             <select className="optionSelect">
+              <option >Select Book</option>
               <option value="">Programming Language</option>
               <option value="">Alogorithm  & Data structure</option>
               <option value="">Web Development</option>
@@ -16,6 +17,7 @@ export const BookCategory = () => {
               <option value="">Networking</option>
               <option value="">Cyber Security</option>
               <option value="">IOT</option>
+              <option value="">AI Module</option>
               <option value="">Other</option>
             </select>
           </div>
