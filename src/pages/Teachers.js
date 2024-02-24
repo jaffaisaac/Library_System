@@ -8,7 +8,7 @@ export const Teachers = () => {
     const firebaseApp = initializeApp(firebaseConfig);
     const db = getFirestore(firebaseApp);
     const collRef =collection(db,"Student_Registor");
-    const OnlyTeacher =query(collRef,where("new_UserType","==","Teacher"))
+    const OnlyTeacher =query(collRef,where("new_UserType","==","teacher"))
     try {
       const allTeacher =[];
       (await getDocs(OnlyTeacher)).forEach(

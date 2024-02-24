@@ -42,7 +42,7 @@ form {
   }
   
   
-  button {
+ form button {
    width: 200px;
     padding: 10px 20px;
     background-color: #4caf50; 

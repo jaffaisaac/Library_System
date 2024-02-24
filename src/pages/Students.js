@@ -15,7 +15,7 @@ export const Students = () => {
        const collRef =collection(db,"Student_Registor");
        
        try {
-        const OnlyStudents = query(collRef,where("new_UserType","==","Student"));
+        const OnlyStudents = query(collRef,where("new_UserType","==","student"));
         let allStudents =[]; 
         (await getDocs(OnlyStudents)).forEach(
             docu=>{

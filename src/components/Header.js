@@ -81,13 +81,23 @@ export const Header = ({ userType, logOut }) => {
                 <div className="dropdown-content">
                   {isLibrarian && (
                     <> 
-                  <NavLink to="borrowbooks" className="mylinks"> borrowbooks lib</NavLink>
+                  <NavLink to="borrowbooks" className="mylinks"> Givebooks lib</NavLink>
                   <NavLink to="returedbooks" className="mylinks"> returedbooks lib</NavLink>
+                  <NavLink to="borrowTransactions" className="mylinks"> borrowTransactions</NavLink>
                     </>
                   )}
-                  {isTeacher || isStudent && ( <> 
+                  {/* both teacher and student */}
+                  {isTeacher  && ( <> 
                    <NavLink to="" className="mylinks">  User borrowedbook</NavLink>
                   <NavLink to="" className="mylinks">user returedbook</NavLink>
+                  <NavLink to="UserBorrow" className="mylinks">Conform</NavLink>
+                  <NavLink to="BorrowStatus" className="mylinks">Book stutus</NavLink>
+                  </>)}
+                  {isStudent && ( <> 
+                   <NavLink to="" className="mylinks">  User borrowedbook</NavLink>
+                  <NavLink to="" className="mylinks">user returedbook</NavLink>
+                  <NavLink to="UserBorrow" className="mylinks">Conform</NavLink>
+                  <NavLink to="BorrowStatus" className="mylinks">Book stutus</NavLink>
                   </>)}
                 </div>
               </div>
@@ -97,7 +107,7 @@ export const Header = ({ userType, logOut }) => {
 
         {/* search bar section */}
         <div className="searchBar">
-          <input type="search" />
+          userType:{userType}
         </div>
 
         {/* userManagment section */}

@@ -1,0 +1,30 @@
+
+.userRequre{
+    background-color: rgba(137, 43, 226, 0.288);
+    width: 70%;
+    margin: auto;
+    padding: 6px;
+    margin-top:10px ;
+    border-radius: 5px;
+}
+.bookBorrowDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.controBtn{
+   width: 100%;
+   padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40%;
+
+}
+hr{
+    width: 70%;
+}
+.itemName{
+    font-weight: bold;
+    font-size: 1.1rem;
+}

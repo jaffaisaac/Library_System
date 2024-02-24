@@ -11,6 +11,7 @@ export const BookShef = () => {
           <div >
             <select className="optionSelect">
               <option >Locate Book From Sheif No.</option>
+              <option value="">All Books</option>
               <option value="">BookShelf 1</option>
               <option value="">BookShelf 2</option>
               <option value="">BookShelf 3</option>

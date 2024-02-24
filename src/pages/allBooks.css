@@ -1,27 +1,32 @@
 *{
     /* border: 1px solid red; */
 }
-.Gallaybookcards{
+.GalleryBookCards{
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0px 0px 0px 30px;
 }
 .bookCard{
     width: 150px;
-    margin: 5px;
-    padding:5px;
+    height: 230px;
+    margin: 7px;
+    padding:7px;
     cursor: pointer;
-    transition: all 0.5s ease;
-    
+    transition: all 0.3s ease;
+    overflow: hidden;
+  
+
 }
 .bookCard:hover{
-    background-color: #ccc;
-    transform: scale(1.04);
+    background-color: #302844;
+    transform: scale(1.043);
 }
 
-.cardDetils,.imgcardSection{
-    width: auto;
+.cardDetils,.imgCardSection{
+    width: 100%;
+    /* border: 2px solid rgb(0, 17, 255); */
 }
 .imgcardSection img{
     width: 100%;
@@ -30,5 +35,39 @@
 .cardDetils p{
     /* border: 3px solid limegreen; */
     margin: 0px;
+
+}
+.TextStyle{
+    font-weight: bolder;
+}
+
+/* *on the hover section area  */
+.additional_Infor{
+    background-color: #302844;
+    color: #fff;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for transform and background-color */
+  
+}
+.btnControl_section{
+    border: 3px solid rgb(30, 255, 0);
+}
+.bookCard .btnControl_section button {
+    width: auto;
+    height: auto;
+    padding: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.bookCard:hover .additional_Infor{
+    transform: translateY(-100%);
+}
+.edit_Btn{
+    background-color: red;
+    border:  2px solid red;
+}
+.edit_Btn:hover{
+    background-color: rgb(214, 45, 45);
+    color: #fff;
 
 }

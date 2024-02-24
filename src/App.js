@@ -1,4 +1,3 @@
-import './App.css';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import {  Allroutes} from "./myroutes/Allroutes";
@@ -24,6 +23,8 @@ function App() {
   ///*handle logOut
   const handleLogout=()=>{
     localStorage.removeItem('userType');
+    localStorage.removeItem('username');
+    localStorage.removeItem('userID');
     setuserType(null);
     navigate('/')
 
@@ -32,7 +33,7 @@ function App() {
     <div className="App">
       <Header userType={userType}  logOut={handleLogout}/>
         <main>
-         <Allroutes onlogin={handleLogin}/>
+         <Allroutes userType={userType} onlogin={handleLogin}/>
         </main>
       <Footer/>
     </div>

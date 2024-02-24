@@ -1,0 +1,49 @@
+.approvedcss {
+  background-color: lightgreen;
+  width: 50%;
+  border-radius: 5px;
+  padding: 6px;
+  margin-top: 10px;
+  transition: all ease 0.5s;
+}
+.cancelledcss {
+  background-color: rgba(139, 0, 0, 0.555);
+  color:black;
+  width: 50%;
+  border-radius: 5px;
+  padding: 6px;
+  margin-top: 10px;
+  transition: all ease 0.5s;
+}
+.pendingcss {
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 6px;
+  margin-top: 10px;
+  transition: all ease 0.5s;
+  width: 50%;
+}
+.approvedcss:hover,
+.cancelledcss:hover,
+.pendingcss:hover {
+  transform: scale(1.03);
+}
+ h3 {
+  padding: 0px;
+  margin: -5px;
+}
+.mysty{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border:  2px solid red; */
+}
+.returnedcss{
+  background-color: rgb(236, 175, 19);
+  border-radius: 5px;
+  padding: 6px;
+  margin-top: 10px;
+  transition: all ease 0.5s;
+  color: #fff;
+  width: 50%;
+}
